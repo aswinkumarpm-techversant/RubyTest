@@ -17,12 +17,12 @@ special = "?<>',?[]}{=-)(*&^%$#`~{}"
 regex = /[#{special.gsub(/./) { |char| "\\#{char}" }}]/
 
 # found = array.select {|e, index| e.to_s =~ regex;  }
-sc = []
+special_characters = []
 
 array.each_with_index do |st, index|
   puts index
-  sc << st.scan(regex)
-  if sc
+  special_characters << st.scan(regex)
+  if special_characters
     begin
       raise SpecialCharaterFound, index
     # rescue
@@ -54,7 +54,7 @@ end
 File.open(get_file_name, 'w') do |f2|
   f2.puts string
   f2.puts "the Count of each duplicate letters are : " + test.to_s
-  f2.puts "the special characters are ", sc
+  f2.puts "the special characters are ", special_characters
 end
 
 
