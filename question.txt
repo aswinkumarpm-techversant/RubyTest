@@ -1,0 +1,25 @@
+Read the following nursery rhyme from a file into another file that is saved with a timestamp of creation:
+
+“Mary had a little lamb
+Little lamb, little lamb
+Mary had a little lamb
+Its fleece was white as snow
+And everywhere that Mary went
+Mary went, Mary went
+Everywhere @# that Mary went
+The lamb was sure to go
+
+He followed her to school one day
+School one day, ^&^school one day
+He followed her to school one day
+Which was #$%against the rule
+It made the children laugh and play
+Laugh and play, laugh &*and play
+It made the children laugh and play
+To see a lamb at school”
+
+Use the iterators: collect and map for looping.
+Print out the special characters found in the file by implementing a custom exception.
+Calculate the number of duplicate occurrences of an alphabet and record it into another file as a hash.
+The filename with a timestamp in it’s name (the format of the timestamp date should be “anyfilename_22ndSep202009:52”.
+Use iterator “inject” to calculate the sum total of duplicate occurrences.
