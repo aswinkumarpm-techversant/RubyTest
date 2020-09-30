@@ -22,6 +22,7 @@ special_characters = []
 array.each_with_index do |st, index|
   puts index
   special_characters << st.scan(regex)
+  puts special_characters
   if special_characters
     begin
       raise SpecialCharaterFound, index
